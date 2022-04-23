@@ -3,6 +3,7 @@
 // Refrigerante 1000ml por pessoa +6h = 1500ml
 
 // criancas = 0,5 pessoa
+
 const calcular = document.querySelector('#calcular');
 const resultado = document.querySelector('#resultado');
 const adultos = document.querySelector('#adultos');
@@ -35,7 +36,7 @@ function comidaNecessaria () {
     let refriCrianca = criancas * refrigerante;
     let refriTotal = (refriAdultos + refriCrianca) / 1000;
 
-    console.log(`Você vai ter que consumir ${carneTotal}Kg de carne`);
-    console.log(`Você vai ter que comprar ${cervejaTotal}L de cerveja`);
-    console.log(`Você vai ter que comprar ${refriTotal}L de refrigerante`);
+    resultado.innerHTML =  `Você vai ter que comprar ${carneTotal}Kg de carne <br>
+                            Você vai ter que comprar ${cervejaTotal}L de cerveja <br>
+                            Você vai ter que comprar ${refriTotal}L de refrigerante`;
 };

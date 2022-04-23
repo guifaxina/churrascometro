@@ -1,5 +1,6 @@
 *{
     margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .form{
     display: flex;
@@ -16,9 +17,21 @@ input {
     padding: 0.45rem;
     cursor: pointer;
 }
-.section{
+.container{
     background-color: burlywood;
     width: 400px;
-    height: 500px;
+    height: 400px;
+    border-radius: 12px;
+    margin-top: 5%;
+}
+h1 {
+    margin-left: 10%;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+}
+p {
+    text-align: left;
+    margin-top: 2rem;
+    margin-left: 10%;
 }
 
